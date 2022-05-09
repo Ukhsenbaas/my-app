@@ -1,12 +1,22 @@
-
-
-import db from './firbase';
-import {useState} from 'react';
+// import { db } from "../firebase";
+import { useState } from "react";
+import { doc, onSnapshot } from "firebase/firestore";
 
 export const About = () => {
-    const [name  , Setname] = useState("");
-    const [age , Setage] = useState("");
-    const [sex , Setsex] = useState("");
+  //   window.addEventListener("load", () => {
+  //     Fetchdata();
+  //   });
 
-    return <h1>About</h1>;
- };
+  //   const Fetchdata = () => {
+  //     db.collection("data")
+  //       .get()
+  //       .then((querySnapshot) => {
+  //         querySnapshot.forEach((element) => {
+  //           let data = element.data();
+  //           setInfo((arr) => [...arr, data]);
+  //         });
+  //       });
+  //   };
+
+  return <h1>{info}</h1>;
+};

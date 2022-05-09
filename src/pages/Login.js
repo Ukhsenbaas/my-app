@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { auth } from "../firebase";
-import { useNavigate } from "react-router-dom";
-
 export function Login() {
   const [phone, setPhone] = useState("");
   const [value, setValue] = useState("");
